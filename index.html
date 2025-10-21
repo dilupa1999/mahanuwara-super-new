@@ -260,6 +260,115 @@
             }
         }
     </style>
+    <!-- Tablet (iPad Pro) specific tweaks for product tab area -->
+    <style>
+        @media (min-width: 768px) and (max-width: 1366px) {
+            /* Allow the tab menu to wrap onto multiple lines and center it */
+            .ltn__tab-menu .nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 8px;
+            }
+
+            .ltn__tab-menu .nav a {
+                flex: 0 0 auto;
+                padding: 8px 14px;
+                font-size: 13px;
+                white-space: nowrap;
+            }
+
+            /* Ensure the product tab content uses 3 columns */
+            .ltn__product-tab-content-inner .col-lg-3,
+            .ltn__product-tab-content-inner .col-xl-3 {
+                -ms-flex: 0 0 33.3333%;
+                flex: 0 0 33.3333%;
+                max-width: 33.3333%;
+            }
+
+            /* Reduce horizontal gaps so 3 cards fit nicely */
+            .ltn__product-item {
+                padding-left: 8px;
+                padding-right: 8px;
+                margin-bottom: 28px;
+            }
+
+            /* Make product images responsive inside the smaller column */
+            .ltn__product-item .product-img img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            /* Shorten the large tab title spacing at top on tablets */
+            .ltn__product-tab-area .section-title-area {
+                margin-bottom: 14px;
+            }
+        }
+    </style>
+    <!-- iPad/tablet product-grid tweaks -->
+    <style>
+        /* On tablets / iPad Pro show 3 items per row instead of 4 */
+        @media (min-width: 768px) and (max-width: 1366px) {
+            .ltn__product-area .col-lg-3,
+            .ltn__product-area .col-xl-3 {
+                -ms-flex: 0 0 33.3333%;
+                flex: 0 0 33.3333%;
+                max-width: 33.3333%;
+            }
+
+            /* Slightly reduce horizontal padding so three cards fit comfortably */
+            .ltn__product-item {
+                margin-bottom: 28px;
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+
+            /* Ensure product images scale nicely within smaller columns */
+            .ltn__product-item .product-img img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            /* Make titles wrap instead of overflowing */
+            .ltn__product-item .product-title a {
+                white-space: normal;
+                word-break: break-word;
+            }
+        }
+    </style>
+    <!-- iPad / tablet responsive tweaks: center footer copyright and ensure full-width layout -->
+    <style>
+        /* Target iPad Pro widths (portrait and landscape) and similar tablets */
+        @media (min-width: 768px) and (max-width: 1366px) {
+            /* Make the copyright area use full container width and center content */
+            .ltn__copyright-area .ltn__copyright-design {
+                text-align: center !important;
+                padding: 14px 10px; /* give some vertical breathing room */
+            }
+
+            /* Ensure the column spans full row so it centers properly */
+            .ltn__copyright-area .col-md-6 {
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+
+            /* Remove potential left padding from parent container-fluid on small tablets */
+            .ltn__copyright-area .container-fluid {
+                padding-left: 18px;
+                padding-right: 18px;
+            }
+
+            /* If there's any small logo or inline elements, allow wrapping to avoid overflow */
+            .ltn__copyright-design p {
+                margin: 0;
+                white-space: normal;
+                word-break: break-word;
+            }
+        }
+    </style>
     <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png" />
     <link rel="apple-touch-icon" href="img/favicon.png" />
     <!-- Font Icons css -->
@@ -883,8 +992,8 @@
                                                     <h2 class="product-title"><a href="product-details.html">Coconut</a>
                                                     </h2>
                                                     <div class="product-price">
-                                                        <span>Rs. 585.00</span>
-                                                        <del>Rs. 702.00</del>
+                                                        <span>Rs. 58500.00</span>
+                                                        <del>Rs. 702000.00</del>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2128,8 +2237,8 @@
                                                     <h2 class="product-title"><a href="product-details.html">Pears
                                                             Cologne Magic Drops</a></h2>
                                                     <div class="product-price">
-                                                        <span>Rs. 575.00</span>
-                                                        <del>Rs. 653.00</del>
+                                                        <span>Rs. 585.00</span>
+                                                        <del>Rs. 702.00</del>
                                                     </div>
                                                 </div>
                                             </div>
