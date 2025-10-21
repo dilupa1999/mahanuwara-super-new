@@ -1,3 +1,21 @@
+/* fonts - added: futura and Helvetica-Bold */
+@font-face {
+  font-family: 'FuturaLocal';
+  src: url('../fonts/futura.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaLocal';
+  src: url('../fonts/Helvetica-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 /*
     Template Name: Broccoli
     Description: Organic Food HTML Template
@@ -54,22 +72,6 @@
 ------------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;family=Rajdhani:wght@400;500;600;700&amp;display=swap");
 
-/* Local fonts - added: futura and Helvetica-Bold */
-@font-face {
-  font-family: 'FuturaLocal';
-  src: url('../fonts/futura.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'HelveticaLocal';
-  src: url('../fonts/Helvetica-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
 
 /*
 font-family: 'Open Sans', sans-serif;
