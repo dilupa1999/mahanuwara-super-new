@@ -1,6 +1,6 @@
 /* fonts - added: futura and Helvetica-Bold */
 @font-face {
-  font-family: 'FuturaLocal';
+  font-family: 'futura';
   src: url('../fonts/futura.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-  font-family: 'HelveticaLocal';
+  font-family: 'futura';
   src: url('../fonts/Helvetica-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
