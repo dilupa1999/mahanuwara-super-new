@@ -497,3 +497,193 @@
   word-break: break-word;
 }
 
+/* -- Styles moved from inline <style> blocks in index.html -- */
+
+/* Product weight styling: green color and slight spacing under title */
+.product-weight {
+  color: #2ecc71; /* green */
+  font-weight: 600;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+
+/* Image-based ribbon overlay (use when you have a PNG/SVG image) */
+.ribbon-image {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  width: 90px;
+  height: 90px;
+  z-index: 12;
+  pointer-events: none;
+}
+
+.ribbon-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* When product-weight is inside the image, position bottom-right */
+.product-img {
+  position: relative;
+}
+
+.product-img .product-weight {
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #16a34a; /* slightly darker green for contrast */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  z-index: 3;
+}
+
+/* Green OFF badge on product images (top-left) */
+.product-badge {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  background: #16a34a;
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  z-index: 6;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-badge small {
+  display: block;
+  font-size: 10px;
+  opacity: 0.95;
+  font-weight: 700;
+  line-height: 1
+}
+
+/* Sponsored ribbon (diagonal top-right) */
+.ribbon {
+  position: absolute;
+  right: -10px;
+  top: 0px;
+  overflow: hidden;
+  width: 120px;
+  height: 120px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 160px;
+  padding: 8px 0;
+  background: #1e90ff; /* blue */
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  transform: rotate(45deg);
+  top: 18px;
+  right: -34px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  pointer-events: auto;
+  font-size: 12px;
+}
+
+/* small triangle ends to make ribbon look neat */
+.ribbon span:before,
+.ribbon span:after {
+  content: "";
+  position: absolute;
+  border-top: 6px solid #1573d6; /* slightly darker */
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  bottom: -6px;
+}
+
+.ribbon span:before { left: 10px; }
+.ribbon span:after  { right: 10px; }
+
+/* Smaller badge on narrow screens */
+@media (max-width:480px) {
+  .product-badge { left: 6px; top: 6px; width: 36px; height: 36px; border-radius: 5px; font-size: 11px }
+  .product-badge small { font-size: 9px }
+}
+
+/* Pager controls for product grids */
+.pager-controls { display: flex; gap: 10px; justify-content: center; margin-top: 18px }
+.pager-controls .pager-btn { background: #fff; border: 1px solid #e5e7eb; padding: 6px 12px; border-radius: 6px; color: #111; cursor: pointer; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06) }
+.pager-controls .pager-btn[disabled] { opacity: .45; cursor: not-allowed }
+.pager-controls .pager-btn:hover:not([disabled]) { background: #f8fafc }
+
+/* Small red "New" badge under the OFF badge */
+.product-new {
+  position: absolute;
+  left: 8px;
+  top: 65px; /* just under the green box */
+  background: #e11d48; /* red */
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  z-index: 6;
+  text-align: center;
+}
+@media (max-width:480px) {
+  .product-new { left: 6px; top: 44px; padding: 3px 5px; font-size: 9px; border-radius: 3px }
+}
+
+/* Tablet (iPad Pro) specific tweaks for product tab area */
+@media (min-width: 768px) and (max-width: 1366px) {
+  /* Allow the tab menu to wrap onto multiple lines and center it */
+  .ltn__tab-menu .nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+  .ltn__tab-menu .nav a { flex: 0 0 auto; padding: 8px 14px; font-size: 13px; white-space: nowrap; }
+  /* Ensure the product tab content uses 3 columns */
+  .ltn__product-tab-content-inner .col-lg-3, .ltn__product-tab-content-inner .col-xl-3 { -ms-flex: 0 0 33.3333%; flex: 0 0 33.3333%; max-width: 33.3333%; }
+  /* Reduce horizontal gaps so 3 cards fit nicely */
+  .ltn__product-item { padding-left: 8px; padding-right: 8px; margin-bottom: 28px; }
+  /* Make product images responsive inside the smaller column */
+  .ltn__product-item .product-img img { width: 100%; height: auto; display: block; }
+  /* Shorten the large tab title spacing at top on tablets */
+  .ltn__product-tab-area .section-title-area { margin-bottom: 14px; }
+}
+
+/* On tablets / iPad Pro show 3 items per row instead of 4 */
+@media (min-width: 768px) and (max-width: 1366px) {
+  .ltn__product-area .col-lg-3, .ltn__product-area .col-xl-3 { -ms-flex: 0 0 33.3333%; flex: 0 0 33.3333%; max-width: 33.3333%; }
+  /* Slightly reduce horizontal padding so three cards fit comfortably */
+  .ltn__product-item { margin-bottom: 28px; padding-left: 8px; padding-right: 8px; }
+  /* Ensure product images scale nicely within smaller columns */
+  .ltn__product-item .product-img img { width: 100%; height: auto; display: block; }
+  /* Make titles wrap instead of overflowing */
+  .ltn__product-item .product-title a { white-space: normal; word-break: break-word; }
+}
+
+/* iPad / tablet responsive tweaks: center footer copyright and ensure full-width layout */
+@media (min-width: 768px) and (max-width: 1366px) {
+  .ltn__copyright-area .ltn__copyright-design { text-align: center !important; padding: 14px 10px; }
+  .ltn__copyright-area .col-md-6 { -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; }
+  .ltn__copyright-area .container-fluid { padding-left: 18px; padding-right: 18px; }
+  .ltn__copyright-design p { margin: 0; white-space: normal; word-break: break-word; }
+}
+
+/* end moved styles */
+
