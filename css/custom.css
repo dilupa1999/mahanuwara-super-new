@@ -1,0 +1,395 @@
+.site-logo img{
+  /* Maximum height for header logo on desktop */
+  max-height: 85px;
+  height: auto;
+  width: auto;
+}
+
+@media (max-width: 991px){
+  .site-logo img{
+    /* Smaller logo on tablets/phones */
+    max-height: 76px;
+  }
+}
+
+@media (max-width: 576px){
+  .site-logo img{
+    /* Mobile: even smaller */
+    max-height: 45px;
+  }
+}
+
+/* Utility: allow manually increasing if needed */
+.site-logo.site-logo--large img{
+  max-height: 70px;
+}
+
+/* NAVBAR (header) color override: maroon background and white links */
+/* Targets header area class used in the template; keeps contrast for accessibility */
+.ltn__header-area,
+.ltn__header-middle-area,
+.ltn__header-top-area {
+  background-color: #800000 !important;
+}
+
+/* Nav links: make them white and slightly bolder for readability */
+.ltn__main-menu li a,
+.ltn__main-menu li a:visited {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+/* Buttons/utility icons in header: ensure icons/text are visible */
+.ltn__header-options .ltn__call-to-action-btn,
+.ltn__header-options .ltn__utilize-btn {
+  color: #ffffff !important;
+}
+
+/* Mobile / utilize menu header backgrounds */
+/* Keep cart utilize menu header maroon, but make the mobile menu header transparent */
+.ltn__utilize-cart-menu .ltn__utilize-menu-head {
+  background-color: #800000 !important;
+}
+
+.ltn__utilize-mobile-menu .ltn__utilize-menu-head {
+  background: transparent !important;
+  border-bottom: none !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* If any link uses .menu-item-has-children or hover states, keep hover high-contrast */
+.ltn__main-menu li a:hover,
+.ltn__main-menu li.current-menu-item > a {
+  color: #fff !important;
+  opacity: 0.95;
+}
+
+/* UTILIZE (Cart) MENU STYLING */
+.ltn__utilize-cart-menu .ltn__utilize-menu-inner {
+  background: #f7f3ea; /* light cream matching site background */
+  color: #0a0a0a;
+}
+
+.ltn__utilize-cart-menu .ltn__utilize-menu-head {
+  background-color: #800000; /* maroon header */
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ltn__utilize-cart-menu .ltn__utilize-menu-title {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.ltn__utilize-cart-menu .ltn__utilize-close {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.ltn__utilize-cart-menu .mini-cart-product-area {
+  padding: 18px 20px;
+}
+
+.mini-cart-item {
+  display: flex;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  align-items: center;
+}
+
+.mini-cart-img img{
+  width:60px;
+  height:60px;
+  object-fit:cover;
+  border-radius:6px;
+}
+
+.mini-cart-info h6{
+  margin: 0 0 6px 0;
+  font-size: 16px;
+}
+
+.mini-cart-info .mini-cart-quantity{
+  color: #6b6b6b;
+  font-size: 14px;
+}
+
+.mini-cart-item-delete{
+  position: relative;
+  margin-left: auto;
+}
+
+.mini-cart-item-delete i{
+  display:inline-block;
+  width:28px;
+  height:28px;
+  line-height:28px;
+  text-align:center;
+  border-radius:50%;
+  background:#ffffff;
+  color:#333;
+  box-shadow:0 2px 6px rgba(0,0,0,0.08);
+}
+
+.mini-cart-footer{
+  padding: 18px 20px 28px 20px;
+}
+
+.mini-cart-sub-total h5{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin:0 0 18px 0;
+  font-size:18px;
+}
+
+.mini-cart-sub-total h5 span{
+  color:#d74a2b; /* reddish highlight for total */
+  font-weight:700;
+}
+
+.btn-wrapper{
+  display:flex;
+  gap:12px;
+}
+
+.theme-btn-1{ /* View cart button */
+  background:#e84b3a;
+  color:#fff;
+  padding:14px 28px;
+  display:inline-block;
+  text-align:center;
+  border-radius:3px;
+}
+
+.theme-btn-2{ /* Checkout button */
+  background:#0b2b2a;
+  color:#fff;
+  padding:14px 28px;
+  display:inline-block;
+  text-align:center;
+  border-radius:3px;
+}
+
+/* Make sure utilize overlay gets darker overlay when cart open for focus */
+.ltn__utilize-overlay{
+  background: rgba(0,0,0,0.45);
+}
+
+/* Footer copyright centering */
+.ltn__copyright-area .ltn__copyright-design {
+  text-align: center;
+}
+
+/* Footer top area matches nav bar color */
+.footer-top-area {
+  background: #800000 !important; /* maroon like nav bar */
+}
+
+.ltn__copyright-area {
+  background-color: #000000 !important; /* black bar requested */
+  color: #ffffff;
+}
+
+/* Top widgets (on maroon) use white text */
+.footer-top-area .footer-widget .footer-title,
+.footer-top-area .footer-widget h5,
+.footer-top-area .footer-widget p,
+.footer-top-area .footer-menu ul li a,
+.footer-top-area .ltn__social-media a,
+.footer-top-area .footer-address-icon i {
+  color: #ffffff !important;
+}
+
+/* Newsletter button on maroon background */
+.footer-top-area .theme-btn-1 {
+  background-color: #ffffff !important;
+  color: #800000 !important;
+  border-color: #ffffff !important;
+}
+
+.footer-top-area .theme-btn-1:hover {
+  background-color: #f0f0f0 !important;
+  color: #800000 !important;
+}
+
+/* Copyright bar text white */
+.ltn__copyright-area p,
+.ltn__copyright-area a {
+  color: #ffffff !important;
+}
+
+.ltn__copyright-area a:hover {
+  color: #ffd59a !important;
+}
+
+/* Payment icons: normal on cream */
+.footer-top-area img {
+  filter: none;
+}
+
+/* Ensure the copyright column spans full width on small screens and centers content */
+@media (max-width: 767px) {
+  .ltn__copyright-area .col-md-6 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+/* Force horizontal centering of the copyright row on larger screens */
+.ltn__copyright-area .container-fluid > .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ensure the column doesn't keep default offsets; keep it centered */
+.ltn__copyright-area .col-md-6.col-12 {
+  float: none;
+  display: block;
+  max-width: 100%;
+}
+
+/* Keep the copyright paragraph on a single line on larger screens */
+.ltn__copyright-area .ltn__copyright-design p {
+  white-space: nowrap;
+  overflow: visible; /* show full text instead of ellipsis */
+  text-overflow: clip;
+  margin: 0 auto;
+}
+
+/* Allow wrapping on smaller screens */
+@media (max-width: 991px) {
+  .ltn__copyright-area .ltn__copyright-design p {
+    white-space: normal;
+    text-overflow: clip;
+  }
+}
+
+/* Shop by Brand styles */
+.shop-by-brand-bg {
+  background-color: #f7f4ef; /* light cream from the provided sample */
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+.ltn__brand-item img {
+  max-width: 140px;
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+  display: inline-block;
+  margin: 0 auto;
+}
+.ltn__brand-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 8px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(20,20,20,0.04);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.ltn__brand-item:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 26px rgba(20,20,20,0.08);
+}
+
+/* Make brand boxes slightly larger on large screens */
+@media (min-width: 992px) {
+  .ltn__brand-item {
+    padding: 22px 12px;
+  }
+  .ltn__brand-item img {
+    max-width: 170px;
+    height: 110px;
+  }
+}
+
+@media (max-width: 575px) {
+  .ltn__brand-item img {
+    max-width: 110px;
+    height: 70px;
+  }
+  .ltn__brand-item {
+    padding: 10px 6px;
+    border-radius: 8px;
+  }
+}
+
+/* popup that appears above a brand card when clicked */
+.brand-click-popup {
+  position: absolute;
+  background: #0b2b2a; /* dark theme green used elsewhere */
+  color: #ffffff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 700;
+  box-shadow: 0 8px 28px rgba(11,43,42,0.12);
+  transform: translateY(-8px);
+  opacity: 0;
+  transition: transform 180ms ease, opacity 180ms ease;
+  z-index: 11000;
+  pointer-events: none;
+}
+.brand-click-popup.show { transform: translateY(0); opacity: 1; }
+.brand-click-popup::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -6px;
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  border-color: #0b2b2a transparent transparent transparent;
+}
+
+/* Hover action overlay for brand items (eye / cart / wishlist) */
+.brand-hover-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; /* allow clicks through except on buttons */
+}
+.brand-hover-overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 14px;
+  transform: translateY(6px);
+  opacity: 0;
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+.ltn__brand-item:hover .brand-hover-overlay ul {
+  opacity: 1;
+  transform: translateY(0);
+}
+.brand-hover-overlay a {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #fbf9f4; /* light circle */
+  color: #0b2b2a;
+  box-shadow: 0 6px 18px rgba(11,43,42,0.06);
+  text-decoration: none;
+}
+.brand-hover-overlay a i { font-size: 18px; }
+.brand-hover-overlay a:hover { transform: scale(1.06); }
