@@ -470,3 +470,30 @@
 }
 .brand-hover-overlay a i { font-size: 18px; }
 .brand-hover-overlay a:hover { transform: scale(1.06); }
+
+/* Center product prices and stack sale price (del) under the main price.
+   This ensures long <del> values wrap to their own line and everything is horizontally centered. */
+.ltn__product-item .product-price,
+.product-price {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  text-align: center;
+  white-space: normal; /* allow long del text to wrap onto its own line */
+}
+.product-price span {
+  display: block; /* ensure main price sits on its own line */
+  font-weight: 700;
+  line-height: 1;
+}
+.product-price del {
+  display: block; /* put the struck price below the main price */
+  color: #b0b0b0;
+  text-decoration: line-through;
+  font-size: 0.95em;
+  white-space: normal; /* allow wrapping */
+  word-break: break-word;
+}
+

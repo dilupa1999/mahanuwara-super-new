@@ -8641,14 +8641,24 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   color: var(--ltn__secondary-color);
   font-weight: 600;
   font-size: 18px;
-  /* keep price and del on a single line */
+  /* allow price items to wrap when space is limited so long <del> values drop below */
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.product-price span {
+  /* keep the current (main) price from breaking */
   white-space: nowrap;
+  flex: 0 0 auto;
 }
 
 .product-price del {
   opacity: 0.6;
   margin-left: 5px;
   font-size: 80%;
+  /* will wrap to next line automatically when there's not enough space */
 }
 
 /* ensure inline layout for price elements and keep vertical alignment */
