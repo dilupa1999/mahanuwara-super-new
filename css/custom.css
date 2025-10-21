@@ -32,55 +32,6 @@
   padding: 12px;
   }
 }
-@media (max-width: 575px) {
-  /* Mobile: stack logo, menu button and utilities in one row */
-  .ltn__header-middle-area {
-  padding: 10px 12px;
-  }
-  .site-logo img {
-  max-height: 54px;
-  }
-  /* Hide multi-column mega menu on small screens (template provides mobile utilize menu) */
-  .ltn__main-menu {
-  display: none !important;
-  }
-  /* Ensure utilize / mobile menu button is visible and aligned */
-  .ltn__header-options .ltn__utilize-btn,
-  .ltn__header-options .ltn__utilize-open {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  }
-  /* Product grid: single column for better scannability */
-  .ltn__product-gutter [class*='col-'] {
-  flex: 0 0 100% !important;
-  max-width: 100% !important;
-  }
-  /* Product card adjustments */
-  .ltn__product-area .product-item .product-info {
-  padding: 10px 8px;
-  }
-  .ltn__brand-item img {
-  max-width: 120px;
-  height: 70px;
-  }
-  /* Footer copyright: center and allow wrapping */
-  .ltn__copyright-area .ltn__copyright-design p {
-  white-space: normal;
-  text-align: center;
-  padding: 8px 12px;
-  }
-  /* Reduce overlay darkness slightly on mobile so content behind isn't fully hidden */
-  .ltn__utilize-overlay {
-  background: rgba(0,0,0,0.55);
-  }
-}
-.site-logo img{
-  /* Maximum height for header logo on desktop */
-  max-height: 85px;
-  height: auto;
-  width: auto;
-}
 
 @media (max-width: 991px){
   .site-logo img{
