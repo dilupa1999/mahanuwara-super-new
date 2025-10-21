@@ -2,17 +2,14 @@
 @font-face {
   font-family: 'Futura';
   src: url('../fonts/futura.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+
+
 }
 
 @font-face {
   font-family: 'Helvetica-Bold';
   src: url('../fonts/Helvetica-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+
 }
 
 
@@ -70,8 +67,8 @@
 /* -------------------------------------
     Google fonts
 ------------------------------------- */
-/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;family=Rajdhani:wght@400;500;600;700&amp;display=swap");
- */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;family=Rajdhani:wght@400;500;600;700&amp;display=swap");
+
 
 /*
 font-family: 'Open Sans', sans-serif;
