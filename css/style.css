@@ -6,8 +6,8 @@
 }
 
 @font-face {
-  font-family: 'Helvetica-Bold';
-  src: url('../fonts/Helvetica-Bold.ttf') format('truetype');
+  font-family: 'Helvetica';
+  src: url('../fonts/Helvetica.ttf') format('truetype');
 
 }
 
@@ -256,7 +256,7 @@ font-family: 'Roboto', sans-serif;
   /* Lighten */
   --ltn__heading-color: #071c1f;
   --ltn__paragraph-color: #071c1f;
-  --ltn__heading-font: 'Futura', sans-serif;
+  --ltn__heading-font: 'futura', sans-serif;
   --ltn__body-font: 'Helvetica', sans-serif;
   /*
     --ltn__heading-font: 'Roboto', sans-serif;
