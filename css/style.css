@@ -256,8 +256,8 @@ font-family: 'Roboto', sans-serif;
   /* Lighten */
   --ltn__heading-color: #071c1f;
   --ltn__paragraph-color: #071c1f;
-  --ltn__heading-font: 'Futura', futura;
-  --ltn__body-font: 'Helvetica-Bold', Helvetica-Bold;
+  --ltn__heading-font: 'Futura', sans-serif;
+  --ltn__body-font: 'Helvetica', sans-serif;
   /*
     --ltn__heading-font: 'Roboto', sans-serif;
     --ltn__body-font: 'Nunito Sans', sans-serif;
