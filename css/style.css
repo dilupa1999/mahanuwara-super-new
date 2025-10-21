@@ -1,16 +1,16 @@
 /* fonts - added: futura and Helvetica-Bold */
 @font-face {
-  font-family: 'Futura';
+  font-family: 'futura';
   src: url('../fonts/futura.ttf') format('truetype');
 
 }
 
-/* @font-face {
+@font-face {
   font-family: 'Helvetica-Bold';
   src: url('../fonts/Helvetica-Bold.ttf') format('truetype');
 
 }
- */
+
 
 /*
     Template Name: Broccoli
@@ -66,8 +66,8 @@
 /* -------------------------------------
     Google fonts
 ------------------------------------- */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;family=Rajdhani:wght@400;500;600;700&amp;display=swap");
-
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;family=Rajdhani:wght@400;500;600;700&amp;display=swap");
+ */
 
 /*
 font-family: 'Open Sans', sans-serif;
@@ -256,8 +256,8 @@ font-family: 'Roboto', sans-serif;
   /* Lighten */
   --ltn__heading-color: #071c1f;
   --ltn__paragraph-color: #071c1f;
-  --ltn__heading-font: 'Helvetica-Bold', Helvetica-Bold;
-  --ltn__body-font: 'Futura', futura;
+  --ltn__heading-font: 'Futura', futura;
+  --ltn__body-font: 'Helvetica-Bold', Helvetica-Bold;
   /*
     --ltn__heading-font: 'Roboto', sans-serif;
     --ltn__body-font: 'Nunito Sans', sans-serif;
