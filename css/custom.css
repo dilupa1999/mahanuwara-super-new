@@ -227,7 +227,7 @@
 @media (max-width: 576px) {
   .site-logo img,
   .sticky-logo img {
-    max-height: 40px;
+    max-height: 120px;
   }
 }
 
