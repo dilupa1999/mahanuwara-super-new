@@ -199,6 +199,39 @@
   border-radius:3px;
 }
 
+/* NAVBAR LOGO SIZE ADJUSTMENT -------------------------------------------------
+   The site header is tall so we force a smaller logo height here and provide
+   responsive fallbacks for tablet/phone. Tweak the max-height values below.
+*/
+.site-logo img {
+  max-height: 66px;
+  height: auto;
+  width: auto;
+  display: block;
+}
+
+.sticky-logo img {
+  max-height: 66px;
+  height: auto;
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .site-logo img,
+  .sticky-logo img {
+    max-height: 48px;
+  }
+}
+
+@media (max-width: 576px) {
+  .site-logo img,
+  .sticky-logo img {
+    max-height: 40px;
+  }
+}
+
+
 .theme-btn-2{ /* Checkout button */
   background:#0b2b2a;
   color:#fff;
